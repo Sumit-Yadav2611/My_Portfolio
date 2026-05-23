@@ -7,8 +7,7 @@ import {
   Twitter,
   Download,
 } from "lucide-react";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
-
+import { AnimatedBorderButton } from "../Components/AnimatedBorderButton";
 const skills = [
   "React",
   "Next.js",
@@ -69,53 +68,57 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Full-Stack Developer • React 
+                Full-Stack Developer • React
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Hi, I'm <span className="text-primary glow-text">SUMIT YADAV</span>
+                Hi, I'm{" "}
+                <span className="text-primary glow-text">SUMIT YADAV</span>
                 <br />
-                Crafting modern 
+                Crafting modern
                 <br />
                 <span className="font-serif italic font-normal text-white">
                   applications
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                A passionate developer focused on MERN stack development
-                and modern web technologies.I love creating responsive, user-friendly applications while continuously improving my coding and problem-solving skills.
+                A passionate developer focused on MERN stack development and
+                modern web technologies.I love creating responsive,
+                user-friendly applications while continuously improving my
+                coding and problem-solving skills.
               </p>
             </div>
 
-           {/* CTAs */}
-<div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-  
-  {/* Contact Button */}
-  <a href="#contact">
-    <Button size="lg">
-      Contact Me <ArrowRight className="w-5 h-5 ml-2" />
-    </Button>
-  </a>
+            {/* CTAs */}
+            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+              {/* Contact Button */}
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
 
-  {/* Download CV Button */}
-  <a href="/Sumit_Yadav_Resume.pdf" download>
-    <AnimatedBorderButton>
-      <Download className="w-5 h-5 mr-2" />
-      Download CV
-    </AnimatedBorderButton>
-  </a>
-
-</div>
+              {/* Download CV Button */}
+              <a href="/Sumit_Yadav_Resume.pdf" download>
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5 mr-2" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
+            </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
                 { icon: Github, href: "https://github.com/Sumit-Yadav2611" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/sumit-yadav-8a8929357/" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/sumit-yadav-8a8929357/",
+                },
                 { icon: Twitter, href: "#" },
               ].map((social, idx) => (
                 <a
